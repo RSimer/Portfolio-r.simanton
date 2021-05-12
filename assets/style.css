@@ -200,6 +200,7 @@
         font-size: 30px;
         border-right: 4px solid black;
         padding-right: 35px;
+        transform: translate(0px,-35px);
 
     }
 
@@ -208,6 +209,8 @@
         box-sizing: border-box;
         font-size: 20px;
         margin: auto;
+        border-left: 4px solid black;
+        padding-left: 85px;
     }
 
     .contact-section{
