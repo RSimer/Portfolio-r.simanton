@@ -177,11 +177,11 @@
        
        .video {
          background-image: none;
-         background-size: auto 115%;
-
-
+         background-size: fit-content;
          
        }
+
+
        video::-webkit-media-controls {
         display:none !important;
     }
