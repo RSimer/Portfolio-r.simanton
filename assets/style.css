@@ -135,10 +135,10 @@
         flex-wrap: wrap;
         border: 2px solid palevioletred;
         min-height: 650px;
-        width: 1000px;
+        width: 1200px;
         padding: 60px;
         justify-content: space-between;
-        transform: translate(35%,35%);
+        transform: translate(10%,5%);
         
     }
     
@@ -184,7 +184,7 @@
     .contact-box{
         box-sizing: border-box;
         min-height: 150px;
-        border: 2px solid orange;
+        /* border: 2px solid orange; */
         display: flex;
         margin-top: 900px;
         background: none;
@@ -192,6 +192,9 @@
 
     .contact-box h6{
         font-size: 30px;
+        border-right: 4px solid black;
+        padding-right: 35px;
+
     }
 
     .contact-box a{
