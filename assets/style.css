@@ -144,6 +144,7 @@
         padding: 60px;
         justify-content: space-between;
         transform: translate(10%,5%);
+        background: none;
         
     }
     
@@ -168,6 +169,15 @@
         text-align: center;
         font-size: large;
     }
+
+    .button-item.hover{
+
+        color: grey;
+        opacity: 80%;
+
+    }
+
+
     
     .contact-box{
         box-sizing: border-box;
