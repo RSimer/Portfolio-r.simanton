@@ -35,7 +35,7 @@
         margin-bottom: 15px;
         
     }
-    /*note: put in flexbox with/flexwrap. LOOK UP WIREBOX, FLEXBOXES, AND REWATCH THE SEC 3 DAY 1 VIDEO */
+  
     .nav a{
         color: var(--white);
         display: inline-flex;
@@ -49,8 +49,7 @@
         /* this will hopefully connnect to tablet screens */
     @media all and (max-width: 800px){
         .nav{
-            display: flex;
-            justify-content: flex-end;
+            flex-direction: column;
             
         }
     }
@@ -137,10 +136,9 @@
         box-sizing: border-box;
     }
     .button-grid{
-        position: absolute;
+        position: relative;
         display: flex;
         flex-wrap: wrap;
-        min-height: 775px;
         width: 1200px;
         padding: 60px;
         justify-content: space-between;
@@ -178,32 +176,36 @@
 
     }
 
-    .button-item.img{
-
-        float: center;
-        margin: 20px auto;
-        max-width: fit-content;
-       height: 100px;
-       background-image: url("assets/photo-test.jpg");
-       background-size: cover;
-        background-position: center;
+   .banner {
+    max-width: 100%;
+    height: fit-content;
+    left: 0px;
+    right: 0px;
     }
+
+    #myImage{
+    width: 100%;
+    height: fit-content;
+    left: 0px;
+    right: 0px;
+}
+    
 
     
     .contact-box{
         box-sizing: border-box;
-        min-height: 150px;
+        min-height: 175px;
         /* border: 2px solid orange; */
         display: flex;
-        margin-top: 900px;
+         align-items: baseline;
         background: none;
     }
 
     .contact-box h6{
         font-size: 30px;
-        border-right: 4px solid black;
+        /* border-right: 4px solid black; */
         padding-right: 35px;
-        transform: translate(0px,-35px);
+        /* transform: translate(0px,-35px); */
 
     }
 
