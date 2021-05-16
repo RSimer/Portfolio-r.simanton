@@ -23,8 +23,7 @@ Building a website has been somewhat of a goal of mine. I always thought it was 
 Im sorry you have to look at this.
 
 
+ [here] (https/Rsimer.github.io/Portfolio-r.simanton/)
 
-Click [here](https//Portfolio-r.simanton.io/)
-
-![Screenshot] (Portfolio-r.simanton/assets/screenshot.png)
+![Screenshot] (screenshot.png)
 
