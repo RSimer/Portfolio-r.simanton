@@ -163,11 +163,18 @@
         object-fit: cover;
         
     }
+
+    .button-grid:first-child img{
+        height: 100%;
+        width: 100%;
+    }
     /* sizing test */
     .button-grid img{
         object-fit: cover;
-        width: 100%;
+        width: 75vh;
+        height: 75vh;
         object-position: center;
+        margin: -50px;
     }
     
 /* start of image section */
