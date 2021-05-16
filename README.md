@@ -24,7 +24,7 @@ Im sorry you have to look at this.
 
 
 
-https//Portfolio-r.simanton.io/
+Click [here](https//Portfolio-r.simanton.io/)
 
-![Screenshot] (assets/screenshot.png)
+![Screenshot] (Portfolio-r.simanton/assets/screenshot.png)
 
