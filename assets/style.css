@@ -18,6 +18,7 @@
         display: flex;
         flex-wrap: wrap;
     }
+    /* same as flex but column */
     .lecolumn{
 
         display: flex;
@@ -35,7 +36,6 @@
         justify-content: space-between;
         height: 125px;
     }
-    /* nav bar, taken from css-tricks.com */
     .h1{
         font-size: 40px;
         position: relative;
@@ -72,7 +72,7 @@
     /* end nav section */
     
     
-    /* begin aboutme section*/
+    /* begin aboutme section, this does not look good I know but I looked at thsi for 4 hours and my eyes hurt*/
     
 
     .aboutme{
@@ -124,7 +124,7 @@
    
     /* end aboutme section */
     
-    /* begin of the button section God help me */
+    /* begin of the hover/image section God help me */
     *{
         box-sizing: border-box;
     }
@@ -145,17 +145,12 @@
         margin-bottom: 17px;
         
     }
-    
-    /* .button-item{
-        border: 2px solid floralwhite;
-        min-height: 125px;
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 48.7%;
-        margin-bottom: 15px;
-        box-sizing: border-box;
-    } */
-    
+    h2{
+        color: var(--darkgreen);
+        font-size: 15px;
+        align-self: baseline;
+    }
+    /* start of the image section that almost caused me a migrane, both figuratively and literally. */
     .button-grid:first-child{
     
         flex-basis: 100%;
@@ -165,25 +160,39 @@
     }
 
     .button-grid:first-child img{
-        height: 100%;
-        width: 100%;
+        height: 105vh;
+        width: 220vh;
     }
-    /* sizing test */
+     
     .button-grid img{
         object-fit: cover;
-        width: 75vh;
-        height: 75vh;
+        width: 100vh;
+        height: 35vh;
         object-position: center;
         margin: -50px;
     }
+    h2{
+        color: var(--darkgreen);
+        font-size: 15px;
+        align-self: baseline;
+    }
+    h3{
+        color: var(--darkgreen);
+        font-size: 15px;
+        align-self: baseline;
+    }
+    h4{
+        color: var(--darkgreen);
+        font-size: 15px;
+        align-self: baseline;
+    }
+    h5{
+        color: var(--darkgreen);
+        font-size: 15px;
+        align-self: baseline;
+    }
     
 /* start of image section */
-/* .button-grid:first-child img{
-    height: 400px;
-    box-sizing: border-box;
-    flex-basis: auto;
-    
-} */
 
     .banner {
         display: flex;
@@ -200,9 +209,11 @@
         height: 100px;
         box-sizing: border-box;
     }
-    .button-grid.hover{
+    .button-grid img:hover{
 
-        color: black;
+       opacity: 60%;
+       color: grey;
+
 
 
     }
@@ -210,13 +221,12 @@
     /* end of image section */
 
 
-/* start of footer section */
+/* start of footer section which somehow wanted to be located above the image section... for some reason */
     
     .contact-box{
         min-height: 175px;
-        /* border: 2px solid orange; */
         display: flex;
-         align-items: baseline;
+         align-self: baseline;
         box-sizing: border-box;
         justify-content: space-between;
         margin-top: 1800px;
