@@ -26,5 +26,5 @@ Im sorry you have to look at this.
 
 https//Portfolio-r.simanton.io/
 
-![screenshot] (assets/screenshot.png)
+![Screenshot] (assets/screenshot.png)
 
