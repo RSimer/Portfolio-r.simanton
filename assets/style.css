@@ -254,10 +254,9 @@
 
     @media screen and (max-width:800px){ 
             /* Responsive Header Styling */
-            .flexSpaceBetween {
+            .flex {
                 flex-direction: column;
                 align-items: center;
-                padding-top: 0;
             }
             h1 {
                 width: 100%;
