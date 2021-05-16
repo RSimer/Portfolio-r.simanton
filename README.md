@@ -22,8 +22,7 @@ Building a website has been somewhat of a goal of mine. I always thought it was 
 # Usage
 Im sorry you have to look at this.
 
-
- [here] (https://Portfolio-r.simanton.github.io)
+[here] (https://Portfolio-r.simanton.github.io)
 
 ![Screenshot] (screenshot.png)
 
