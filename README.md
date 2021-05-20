@@ -22,7 +22,7 @@ Building a website has been somewhat of a goal of mine. I always thought it was 
 # Usage
 Im sorry you have to look at this.
 
-https://RSimer.github.io/Portfolio-r.simanton/
+https://rsimer.github.io/Portfolio-r.simanton/
 
 ![Screenshot](assets/screenshot.png)
 
