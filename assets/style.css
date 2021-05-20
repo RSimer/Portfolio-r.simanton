@@ -78,8 +78,9 @@
     .aboutme{
        position: relative;
        left: 250px;
-       display: flex;
-       flex-wrap: wrap;
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: auto;
        justify-content: space-around;
         height: 350px;
         width: calc(75% + 5px);
@@ -92,34 +93,29 @@
     }
     
     .aboutme h2{
-        position: relative;
-        right: 105px;
-        bottom: 10px;
+         position: relative;
+        left: auto;
         text-align: left;
         flex-wrap: wrap;
         font-size: 50px;
-        text-align: left;
+        text-align: center;
         margin-left: 5px;
         margin-top: 55px;
-        width: 150px;
-        flex-basis: auto;
-    
+        width: 100%;
+        flex-basis: auto; 
     }
     
-    .aboutme p{
-        justify-content: flex-end;
+    
+     .aboutme p{
         text-align: justify;
-        display: flex;
-        flex-wrap: wrap;
-        position: inherit;
-        left: 110px;
-        width: 750px;
+        text-align: center;
+        width: 100%;
         flex-basis: 40%;;
         font-size: 18px;
-        border-left: solid 3px black;
+        border-top: solid 3px black;
         padding-left: 25px;
-        padding-top: 15px;
-    }
+        box-sizing: border-box;
+    } 
 
    
     /* end aboutme section */
@@ -132,13 +128,12 @@
     .button-grid{
         object-fit: cover;
         position: relative;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto;
         justify-content: space-between;
         width: 50%;
         padding: 80px;
         background: var(--bc);
-        border: 2px solid var(--white);
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 48.7%;
@@ -153,15 +148,17 @@
     /* start of the image section that almost caused me a migrane, both figuratively and literally. */
     .button-grid:first-child{
     
-        flex-basis: 100%;
-        box-sizing: border-box;
+        display: grid;
+        flex-basis: 75%;
         object-fit: cover;
+        padding-left: 17.5%;
         
     }
 
     .button-grid:first-child img{
         height: 105vh;
-        width: 220vh;
+        width: 150%;
+        
     }
      
     .button-grid img{
@@ -172,21 +169,6 @@
         margin: -50px;
     }
     h2{
-        color: var(--darkgreen);
-        font-size: 15px;
-        align-self: baseline;
-    }
-    h3{
-        color: var(--darkgreen);
-        font-size: 15px;
-        align-self: baseline;
-    }
-    h4{
-        color: var(--darkgreen);
-        font-size: 15px;
-        align-self: baseline;
-    }
-    h5{
         color: var(--darkgreen);
         font-size: 15px;
         align-self: baseline;
@@ -221,15 +203,17 @@
     /* end of image section */
 
 
-/* start of footer section which somehow wanted to be located above the image section... for some reason */
+/* start of footer section which somehow wanted to be located above the image section... for some reason. I have redone this six times, im throwing myself in the ocean. */
     
     .contact-box{
         min-height: 175px;
         display: flex;
-         align-self: baseline;
-        box-sizing: border-box;
+         align-self: bottom;
         justify-content: space-between;
-        margin-top: 1800px;
+        position: relative;
+        top: 100%;
+        margin-top: 100%;
+        
     }
 
     .contact-box h6{
@@ -281,13 +265,17 @@
                 width: 100%;
                 justify-content: center;
             }
+            /* button grid section */
+            .button-grid{
+               width: 50%;
+            }
         
         
             /* contact info mobile styling */
             .contact-box {
                 flex-direction: column;
                 justify-content: flex-start;
-                margin-top: 750px;
+                margin-top: 100%;
             }
             .contact-box h6 {
                 margin: 0;
