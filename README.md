@@ -24,5 +24,5 @@ Im sorry you have to look at this.
 
 https://rsimer.github.io/Portfolio-r.simanton/
 
-![Screenshot](assets/screenshot.png)
+![Screenshot](assets/images/sc.png)
 
