@@ -1,33 +1,54 @@
 body{
-    background-color: #CFB9A5;
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Lora', serif;
 }
-.top-container{
-    width: 100%;
-    height: 5em;
-    justify-content: space-between;
-    display: inline-flex;
-    flex-wrap: wrap;
-    background-color: #090c02;
-    color: #fff;
-    border-radius: 5px 5px 5px 5px;
+html{
+  scroll-behavior: smooth;
 }
-.navigation{
+.name-brand h1{
+  font-family: 'Alegreya';
+  font-weight: normal;
+
+
+}
+
+li{
+  list-style-type: none;
+}
+nav{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-right: 10px;
-    height: 15px;
-    margin-bottom: 35px;}
-.navigation a{
-    padding: 15px;
-    padding-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    background-color: #333537;
     color: #fff;
-    font-size: 18px;
+    border-radius: 5px 5px 5px 5px;
+   }
+   .navbar{
+     display: flex;
+     justify-content: space-around;
+     width: 25%;
+     margin-top: 22px;
+   }
+.navbar a{
+   text-decoration: none;
+    color: #fff;
+    letter-spacing: 2.8px;
 }
-.top-container h1{
-    padding-top: 15px;
-    font-size: 35px;
+.burger{
+  display: none;
 }
+.burger div{
+ width: 25px;
+ height: 3px;
+ margin: 5px;
+ background-color: #fff;
+}
+ 
+
 
 .about{
     display: block;
@@ -38,6 +59,7 @@ body{
     height: 20vh;
     width: 75%;
     padding-bottom: 15px;
+    border: 0em;
 }
 .about h2{
     text-align: center;
@@ -49,9 +71,9 @@ body{
     grid-gap: 10px;
     grid-template-columns: auto ;
     grid-template-rows: 200px 100px 100px;
-    background-color: #CFB9A5;
+    border: 2vh ;
     color: #444;
-    padding-top: 25px;
+    
   }
 
   .box {
@@ -105,7 +127,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   background: #444;
+   background: #333537;
     height: 10em;
     width: 100%;
     color: #fff;
@@ -113,6 +135,8 @@ body{
 .contact h6{
     width: 15%;
     font-size: 20px;
+    font-weight: lighter;
+    
 }
 .contact a{
     justify-content: flex-end;
@@ -121,28 +145,85 @@ body{
     color: #fff;
 }
 
+@media screen and (max-width: 1730px) {
+  .navbar{
+    width:35%;
+  }
+  
+}
+@media screen and (max-width:1530px) {
+  .navbar{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width:1050px){
+    body{
+      overflow-x: hidden;
+    }
+    
+    .navbar{
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 4vh;
+      background-color: #333537;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      
+    }
+    .navbar li{
+      opacity: 0;
+    }
+    .nav-active{
+      transform: translateX(0%);
+    }
+    .burger{
+      display: block;
+      cursor: pointer;
+    }
+
+    .wrapper{
+      display: column;
+    }
+}
 
 @media screen and (max-width:800px){
-    .top-container{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .contact {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .contact h6 {
-        text-align: center;
-        margin: 0;
-        margin-bottom: 10px;
-        margin: auto;
-        border-bottom: solid 2px black;
-    }
-    .contact a {
-        margin-bottom: 15px;
-        margin:0 0 15px 2px;
-        margin-bottom: auto;
-    }
+  .about{
+    height: auto;
+  }
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contact h6 {
+  font-size: x-large;
+  width: auto;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    margin: auto;
+    border-bottom: solid 2px black;
+}
+.contact a {
+    margin-bottom: 15px;
+    margin:0 0 15px 2px;
+    margin-bottom: auto;
+    border-style: none;
+}
+}
+@keyframes navBarFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
