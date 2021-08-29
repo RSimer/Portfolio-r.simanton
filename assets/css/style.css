@@ -99,6 +99,7 @@ nav{
 }
   .a:hover{
     opacity: 80%;
+    cursor: pointer;
   }
  
   .img-b{
@@ -111,6 +112,7 @@ nav{
   }
   .b:hover{
     opacity: 80%;
+    cursor: pointer;
   }
    
   .img-c{
@@ -124,6 +126,7 @@ nav{
   }
   .c:hover{
     opacity: 80%;
+    cursor: pointer;
   }
   /* .d {
     grid-column: 1.5;
@@ -134,6 +137,7 @@ nav{
 } */
   .d:hover{
     opacity: 80%;
+    cursor: pointer;
   }
   .img-d{
     background-image: url(../images/GitHub.jpg);
