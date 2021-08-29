@@ -68,59 +68,81 @@ nav{
 
 .wrapper {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto ;
-    grid-template-rows: 200px 100px 100px;
-    border: 2vh ;
+    grid-template-columns: 55% 40%;
+    grid-template-rows: 650px 650px;
+    grid-gap: 3em;
+    border: 2vh 2vw solid black ;
     color: #444;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 15px;
     
   }
 
   .box {
     background-color: #444;
-    color: #fff;
+    color:black;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
+    border: 2px solid black;
+    }
 
-  }
-
-  .a {
-    grid-column: 1 / 3;
-    grid-row: 1;
-    background-image: url("../images/database.jpg");
-    background-size: 25%;
+    
+.img-a{
+  background-image: url("../images/movie.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
   .a:hover{
     opacity: 80%;
   }
-  .b {
-    grid-column: 3 ;
-    grid-row: 1 / 3;
-    background-image: url(../images/weather.jpg);
+ 
+  .img-b{
+    background-image: url('../images/workdayscreenshot.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   .b:hover{
     opacity: 80%;
   }
-  .c {
-      color: black;
-    grid-column: 1 ;
-    grid-row: 2 ;
-    background-image: url(../images/planner.jpg);
-    background-size: fill;
+   
+  .img-c{
+    background-image: url('../images/home.PNG');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
   }
   .c:hover{
     opacity: 80%;
   }
-  .d {
-    grid-column: 2;
+  /* .d {
+    grid-column: 1.5;
     grid-row: 2;
     background-image: url(../images/GitHub.jpg);
-    background-size: fill;
-}
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
   .d:hover{
     opacity: 80%;
+  }
+  .img-d{
+    background-image: url(../images/GitHub.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
   }
 
 .contact{
@@ -128,9 +150,12 @@ nav{
     justify-content: space-evenly;
     align-items: center;
    background: #333537;
-    height: 10em;
+    height: 22vh;
     width: 100%;
     color: #fff;
+    padding-top: auto;
+    margin-top: 45px;
+    
 }
 .contact h6{
     width: 15%;
@@ -186,9 +211,25 @@ nav{
       display: block;
       cursor: pointer;
     }
+    .about{
+      padding: auto;
+      margin-bottom: 10px;
+    }
 
     .wrapper{
-      display: column;
+      flex-wrap: wrap;
+      grid-template-columns: 75%;
+      grid-template-rows: 200px 200px 200px 200px;
+      align-self: center;
+      padding-top: 50px;
+      padding-left: 12.5%;
+      padding-right: 12.5%;
+      
+    }
+
+    .contact{
+      padding: auto;
+      margin-top: 45px;
     }
 }
 
